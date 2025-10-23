@@ -34,8 +34,6 @@ namespace EF6.Benchmarks.Benchmarks
             TestEntities.ForEach(x => Context.TestEntities.Add(x));
             Context.Configuration.AutoDetectChangesEnabled = true;
             Context.ChangeTracker.DetectChanges();
-
-            Context.GetValidationErrors();
         }
 
 
